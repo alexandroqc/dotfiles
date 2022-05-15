@@ -16,5 +16,8 @@ Wayland compositor inspired by i3
 
 
 ## ZSH + [Oh-my-ZSH!](https://github.com/ohmyzsh/ohmyzsh)
- - Prompt: [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
- - [Node Version Manager](https://github.com/nvm-sh/nvm)
+- Prompt: [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+- [Node Version Manager](https://github.com/nvm-sh/nvm)
+
+## [Neovim](https://github.com/neovim/neovim)
+- Theme: [Nord](https://github.com/arcticicestudio/nord-vim)

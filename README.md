@@ -21,3 +21,7 @@ Wayland compositor inspired by i3
 
 ## [Neovim](https://github.com/neovim/neovim)
 - Theme: [Nord](https://github.com/arcticicestudio/nord-vim)
+
+## [Alacritty](https://github.com/alacritty/alacritty)
+Terminal emulator
+- Color scheme: [Nord](https://github.com/arcticicestudio/nord-alacritty)

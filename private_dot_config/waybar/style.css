@@ -1,0 +1,46 @@
+@define-color nord_bg_blue #434C5E;
+
+* {
+	border: none;
+	border-radius: 10px;
+	font-family: "Roboto", "MesloLGS NF";
+	font-size: 13px;
+	min-height: 0;
+}
+
+window#waybar {
+	background: transparent;
+	color: white;
+}
+
+#window {
+	font-weight: bold;
+}
+
+#workspaces button {
+	padding: 0 5px;
+	background: none;
+}
+
+#workspaces button.focused {
+	color: white;
+	background: #4C566A;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    color: #d8dee9;
+}
+
+#clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #modem, #language, #backlight, #idle_inhibitor, #custom-media {
+    padding: 0 0.4em;
+    margin: 0 5px;
+    background: #3b4252;
+}
+
+
+#clock {
+	background: @nord_bg_blue;
+	padding: 0em 1em;
+}

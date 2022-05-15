@@ -1,6 +1,14 @@
 # dotfiles
 
-My personal configuration for Arch Linux + SwayWM environment.
+My personal SwayWM dotfiles managed by [Chezmoi](https://github.com/twpayne/chezmoi).
+
+## [SwayWM](https://github.com/swaywm/sway)
+Wayland compositor inspired by i3
+  - [Waybar](https://github.com/Alexays/Waybar)
+  - [Fuzzel](https://codeberg.org/dnkl/fuzzel)
+  - [Mako](https://github.com/emersion/mako)
+  - SwayIdle
+  - SwayLock
 
 ## [Tmux](https://github.com/tmux/tmux)
 - Theme: [Nord tmux](https://github.com/arcticicestudio/nord-tmux)

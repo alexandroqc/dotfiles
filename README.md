@@ -25,3 +25,7 @@ Wayland compositor inspired by i3
 ## [Alacritty](https://github.com/alacritty/alacritty)
 Terminal emulator
 - Color scheme: [Nord](https://github.com/arcticicestudio/nord-alacritty)
+
+## [K9s](https://github.com/derailed/k9s)
+Terminal UI to interact with Kubernetes clusters
+- Skin: Nord

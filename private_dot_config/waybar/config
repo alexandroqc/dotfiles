@@ -123,10 +123,12 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": " {essid}",
-        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-ethernet": "{ifname} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{signalStrength}  {ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{signalStrength} | {bandwidthUpBits}:{bandwidthDownBits}",
+        "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) "
     },
     "pulseaudio": {
         "scroll-step": 0.5, // %, can be a float

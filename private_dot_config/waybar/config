@@ -6,7 +6,7 @@
     "margin-bottom": -8,
     "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "idle_inhibitor", "custom/media", "pulseaudio", "network", "cpu", "memory", "keyboard-state", "sway/language", "battery"],
+    "modules-right": ["tray", "idle_inhibitor", "mpris", "pulseaudio", "network", "cpu", "memory", "keyboard-state", "sway/language", "battery"],
     "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -110,16 +110,19 @@
         },
         "on-click": "pavucontrol"
     },
-    "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
+    "mpris": {
+        "player": "spotify",
+        "format": "{player_icon} {artist} - {title}",
+        "format-paused": " {player_icon} {artist} - {title}",
+        "tooltip-format": "{artist} - {title}",
         "max-length": 40,
-        "format-icons": {
+        "player-icons": {
             "spotify": "",
-            "default": "🎜"
+            "default": ""
         },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/custom_modules/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+        "on-click": "playerctl --player=spotify play-pause",
+        "on-scroll-up": "playerctl --player=spotify next",
+        "on-scroll-down": "playerctl --player=spotify previous"
     }
 }
 

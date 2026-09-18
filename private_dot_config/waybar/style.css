@@ -33,7 +33,7 @@ window#waybar {
     color: #d8dee9;
 }
 
-#clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #modem, #language, #backlight, #idle_inhibitor, #custom-media {
+#clock, #battery, #cpu, #memory, #network, #pulseaudio, #mpris, #tray, #modem, #language, #backlight, #idle_inhibitor, #custom-media {
     padding: 0 0.4em;
     margin: 0 5px;
     background: #3b4252;

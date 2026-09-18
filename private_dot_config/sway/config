@@ -41,7 +41,7 @@ output * bg "$HOME/Pictures/wallhaven-0wkk87.jpg" fill
 set $laptop eDP-1
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
-exec_always ./scripts/clamshell.sh
+exec_always "$HOME/.config/sway/scripts/clamshell.sh"
 
 #
 # Example configuration:

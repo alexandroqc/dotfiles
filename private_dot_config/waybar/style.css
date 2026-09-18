@@ -1,8 +1,18 @@
+@define-color nord_bg #2E3440;
 @define-color nord_bg_blue #434C5E;
+@define-color nord_text #ECEFF4;
+@define-color nord_gray #4C566A;
+@define-color nord_red #BF616A;
+@define-color nord_orange #D08770;
+@define-color nord_yellow #EBCB8B;
+@define-color nord_green #A3BE8C;
+@define-color nord_purple #B48EAD;
+@define-color nord_blue #81A1C1;
+@define-color nord_cyan #88C0D0;
 
 * {
 	border: none;
-	border-radius: 10px;
+	border-radius: 6px;
 	font-family: "Roboto", "MesloLGS NF";
 	font-size: 13px;
 	min-height: 0;
@@ -10,7 +20,7 @@
 
 window#waybar {
 	background: transparent;
-	color: white;
+	color: @nord_text;
 }
 
 #window {
@@ -33,14 +43,67 @@ window#waybar {
     color: #d8dee9;
 }
 
-#clock, #battery, #cpu, #memory, #network, #pulseaudio, #mpris, #tray, #modem, #language, #backlight, #idle_inhibitor, #custom-media {
+#clock, #battery, #cpu, #memory, #network, #pulseaudio, #mpris, #keyboard-state, #language, #idle_inhibitor {
     padding: 0 0.4em;
     margin: 0 5px;
-    background: #3b4252;
+	background: @nord_bg;
 }
 
 
 #clock {
 	background: @nord_bg_blue;
+	color: @nord_cyan;
 	padding: 0em 1em;
+}
+
+#mpris {
+	color: @nord_green;
+}
+
+#mpris.paused {
+	color: @nord_yellow;
+}
+
+#pulseaudio {
+	color: @nord_blue;
+}
+
+#pulseaudio.muted {
+	color: @nord_red;
+}
+
+#network {
+	color: @nord_cyan;
+}
+
+#network.disconnected {
+	color: @nord_red;
+}
+
+#cpu {
+	color: @nord_orange;
+}
+
+#memory {
+	color: @nord_purple;
+}
+
+#battery {
+	color: @nord_green;
+}
+
+#battery.warning {
+	color: @nord_yellow;
+}
+
+#battery.critical {
+	color: @nord_red;
+}
+
+#idle_inhibitor.activated {
+	color: @nord_yellow;
+}
+
+#idle_inhibitor.deactivated {
+	color: @nord_gray;
 }

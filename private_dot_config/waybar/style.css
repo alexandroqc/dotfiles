@@ -32,6 +32,11 @@ window#waybar {
 	background: none;
 }
 
+#workspaces button.visible {
+	color: @nord_cyan;
+	background: @nord_bg_blue;
+}
+
 #workspaces button.focused {
 	color: white;
 	background: #4C566A;

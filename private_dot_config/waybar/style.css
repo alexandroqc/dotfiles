@@ -13,7 +13,7 @@
 * {
 	border: none;
 	border-radius: 6px;
-	font-family: "Roboto", "MesloLGS NF";
+	font-family: "Roboto Condensed", "MesloLGS NF";
 	font-size: 13px;
 	min-height: 0;
 }
@@ -30,6 +30,10 @@ window#waybar {
 #workspaces button {
 	padding: 0 5px;
 	background: none;
+}
+
+#workspaces {
+	margin-right: 8px;
 }
 
 #workspaces button.visible {
